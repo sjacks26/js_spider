@@ -9,3 +9,5 @@ python3
 selenium
 chromedriver
 tldextract
+
+Original author: Shan Zhang

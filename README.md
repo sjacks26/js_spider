@@ -5,9 +5,9 @@ This tool combines a headless browser with a custom recursive feature, allowing 
 To use, modify Config.py. Then run main.py.
 
 Requirements:  
-python3  
-selenium  
-chromedriver  
-tldextract  
+* python3  
+* selenium  
+* chromedriver  
+* tldextract  
 
 Original author: Shan Zhang

@@ -11,3 +11,4 @@ Requirements:
 * tldextract  
 
 Original author: Shan Zhang
+Contributor: Sam Jackson

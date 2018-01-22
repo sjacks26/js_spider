@@ -10,5 +10,5 @@ Requirements:
 * chromedriver  
 * tldextract  
 
-Original author: Shan Zhang
-Contributor: Sam Jackson
+Original author: Shan Zhang  
+Maintainer: Sam Jackson

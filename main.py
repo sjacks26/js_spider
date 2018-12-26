@@ -65,9 +65,10 @@ while index < len(urls):
 
             new_urls = 0
             links = driver.find_elements_by_tag_name('a')
+            print("Found " + str(len(links)) + " links in " + str(url))
             for link in links:
                 href = link.get_attribute('href')
-                if (href not in urls) and (get_domain(href) == domain) and ("#" not in href):
+                if (href not in urls) and (get_domain(href).domain == domain.domain) and ("#" not in href):
                     urls.append(href)
                     new_urls += 1
             print("Found " + str(new_urls) + " new urls in " + str(url))

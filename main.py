@@ -68,9 +68,12 @@ while index < len(urls):
             print("Found " + str(len(links)) + " links in " + str(url))
             for link in links:
                 href = link.get_attribute('href')
-                if (href not in urls) and (get_domain(href).domain == domain.domain) and ("#" not in href):
-                    urls.append(href)
-                    new_urls += 1
+                try:
+                    if (href not in urls) and (get_domain(href).domain == domain.domain) and ("#" not in href):
+                        urls.append(href)
+                        new_urls += 1
+                except:
+                    pass
             print("Found " + str(new_urls) + " new urls in " + str(url))
         except NotADirectoryError:
             errors += 1
